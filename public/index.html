@@ -15,43 +15,27 @@
 </head>
 
 <body>
-    <header>
-        <div class="collapse bg-dark" id="navbarHeader">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-8 col-md-7 py-4">
-                        <h4 class="text-white">About</h4>
-                        <p class="text-muted">Add some information about the album below, the author, or any other
-                            background context. Make it a few sentences long so folks can pick up some informative
-                            tidbits. Then, link them off to some social networking sites or contact information.</p>
-                    </div>
-                    <div class="col-sm-4 offset-md-1 py-4">
-                        <h4 class="text-white">Contact</h4>
-                        <ul class="list-unstyled">
-                            <li><a href="#" class="text-white">Follow on Twitter</a></li>
-                            <li><a href="#" class="text-white">Like on Facebook</a></li>
-                            <li><a href="#" class="text-white">Email me</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <header id="toTop">
         <div class="navbar navbar-dark bg-dark shadow-sm">
             <div class="container d-flex justify-content-between">
                 <a href="#" class="navbar-brand d-flex align-items-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2"
-                        focusable="false" aria-hidden="true">
-                        <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path>
-                        <circle cx="12" cy="13" r="4"></circle>
-                    </svg>
-                    <strong>Paradiset</strong>
+                    <img class='logo' src="images/Paradiset Logo Transparent SMALL.png" alt="">
+                    <!-- <strong>Paradiset</strong> -->
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader"
                     aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
             </div>
+        </div>
+        <div class="collapse bg-dark" id="navbarHeader">
+            <nav class="site-header sticky-top py-1 d-flex justify-content-around">
+                <a href='#' class='py-2 d-none d-md-inline-block'>Hem</a>
+                <a href='#' class='py-2 d-none d-md-inline-block'>Om Johannes</a>
+                <a href='#' class='py-2 d-none d-md-inline-block'>Podcast</a>
+                <a href='#' class='py-2 d-none d-md-inline-block'>Föreläsningar</a>
+                <a href='#' class='py-2 d-none d-md-inline-block'>Nyhetsbrev</a>
+            </nav>
         </div>
     </header>
 
@@ -64,7 +48,7 @@
                 </video>
                 <div class="container">
                     <h1 class="jumbotron-heading">Jag Är Paradiset</h1>
-                    <p class="lead text-muted">Här får du träffa de ledande forskarna, entreprenörerna, atleterna och
+                    <p class="lead">Här får du träffa de ledande forskarna, entreprenörerna, atleterna och
                         influencers inom hälsa och
                         hållbarhet som ger dig verktyg, tips och inspiration att utveckla din egen hälsa på ett
                         hållbart
@@ -82,19 +66,20 @@
                                 <div class="card-inner">
                                     <div>
                                         <h6>
-                                            <span>
-                                                <a href="#">Om Johannes</a>
-                                            </span>
+                                            <a href="#">Om Johannes</a>
                                         </h6>
                                     </div>
                                     <div>
                                         <p>
-                                            <a href="#">
+                                            <a href="#" class='card-inner-txt'>
                                                 <span>
-                                                    asdasdas
+                                                    Johannes historia
                                                 </span>
                                             </a>
                                         </p>
+                                    </div>
+                                    <div>
+                                        <i class="fas fa-minus"></i>
                                     </div>
                                 </div>
                             </div>
@@ -105,17 +90,54 @@
                                 <img class="pcard" src="../images/top2.webp">
 
                             </div>
-                            <div class="card-inner">asd</div>
+                            <div class="card-inner">
+                                <div>
+                                    <h6>
+                                        <a href="#">Föreläsningar</a>
+                                    </h6>
+                                </div>
+                                <div>
+                                    <p>
+                                        <a href="#" class='card-inner-txt'>
+                                            <span>
+                                                Ett urval av föreläsningar
+                                            </span>
+                                        </a>
+                                    </p>
+                                </div>
+                                <div>
+                                    <i class="fas fa-minus"></i>
+                                </div>
+                            </div>
                         </div>
                         <div class="col-md-4">
 
                             <div>
                                 <img class="pcard" src="../images/top3.webp">
-                                <div class="card-inner">asd</div>
+                                <div class="card-inner">
+                                    <div>
+                                        <h6>
+                                            <a href="#">Podcast</a>
+                                        </h6>
+                                    </div>
+                                    <div>
+                                        <p>
+                                            <a href="#" class='card-inner-txt'>
+                                                <span>
+                                                    Lyssna på Johannes Podcast
+                                                </span>
+                                            </a>
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <i class="fas fa-minus"></i>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
         </section>
         <section id="promo-sec">
             <div class="container">
@@ -125,14 +147,60 @@
             </div>
         </section>
         <section id="upcoming-sec">
+            <h2>Kommande Föreläsningar</h2>
             <div class="container">
                 <div class="row">
-
+                    <div class="card upcoming-sec-card">
+                        <img src="./images/JC_Press_högupplöst.jpeg" class="card-img-top card-1" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">Lorem Ipsem</p>
+                        </div>
+                    </div>
+                    <div class="card upcoming-sec-card">
+                        <img src="./images/JC_Press_högupplöst.jpeg" class="card-img-top card-2" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">Lorem Ipsem</p>
+                        </div>
+                    </div>
+                    <div class="card upcoming-sec-card">
+                        <img src="./images/JC_Press_högupplöst.jpeg" class="card-img-top card-3" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">Lorem Ipsem</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
-        <section id="blog-post">
-
+        <section id="blog-post-sec">
+            <h2 id='headingClr'>Blog Posts</h2>
+            <div class="container">
+                <div class="row">
+                    <div class="card blog-posts-card">
+                        <img src="./images/top1.webp" class="card-img-top card-1" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">Lorem Ipsem</p>
+                        </div>
+                    </div>
+                    <div class="card blog-posts-card">
+                        <img src="./images/top2.webp" class="card-img-top card-2" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">Lorem Ipsem</p>
+                        </div>
+                    </div>
+                    <div class="card blog-posts-card">
+                        <img src="./images/top3.webp" class="card-img-top card-3" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">Lorem Ipsem</p>
+                        </div>
+                    </div>
+                    <div class="card blog-posts-card">
+                        <img src="./images/top2.webp" class="card-img-top card-2" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">Lorem Ipsem</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
         <div class="bg-light">
             <div class="container">
@@ -145,7 +213,7 @@
     </main>
 
     <div class="scroll-up">
-        <a class='up' href='#container'><i class="fas fa-chevron-up"></i></a>
+        <a class='up' href='#toTop'><i class="fas fa-chevron-up"></i></a>
     </div>
     <footer>
         <div class="contianer">
@@ -160,18 +228,14 @@
                     </form>
                 </div>
             </div>
-            <div class="row">
-                <div class="col text-center">
-                    <p>&copy; 2018 by Anonymous</p>
-                </div>
-                <div class="col text-center">
-                    <ul class="icons">
-                        <i class="fab fa-instagram"></i>
-                        <i class="fab fa-youtube"></i>
-                        <i class="fab fa-facebook-f"></i>
-                        <i class="fab fa-pinterest-p"></i>
-                    </ul>
-                </div>
+            <div class="copy">
+                <p>&copy; 2018 by Anonymous</p>
+                <ul class="icons">
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-youtube"></i>
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-pinterest-p"></i>
+                </ul>
             </div>
         </div>
     </footer>
