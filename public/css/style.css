@@ -186,6 +186,28 @@ nav a:hover {
   justify-content: center;
 }
 
+/* carousel */
+#img-carousel {
+  margin: 0 2em 3em 2em;
+}
+
+#img-carousel h2 {
+  color: #e1e1e1;
+  text-align: center;
+  margin-top: 3em;
+}
+.carousel-inner {
+  display: flex;
+
+}
+.carousel-item {
+  width: 65%;
+  height: auto;
+  margin: auto;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
 .scroll-up {
     position: fixed;
     bottom: 2em;
