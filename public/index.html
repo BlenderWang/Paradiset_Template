@@ -15,162 +15,168 @@
 </head>
 
 <body>
-    <nav class="site-header sticky-top py-1">
-        <div class="container d-flex flex-column flex-md-row justify-content-between">
-            <a href="#" class='py-2'>
-                <img src="images/Paradiset Logo Transparent SMALL.png" alt="Green Apple Logo" class="logo">
-            </a>
-            <div class="hamburger-menu">
-                <label for="toggle">&#9776;</label>
-                <input type="checkbox" id="toggle">
+    <header>
+        <div class="collapse bg-dark" id="navbarHeader">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-8 col-md-7 py-4">
+                        <h4 class="text-white">About</h4>
+                        <p class="text-muted">Add some information about the album below, the author, or any other
+                            background context. Make it a few sentences long so folks can pick up some informative
+                            tidbits. Then, link them off to some social networking sites or contact information.</p>
+                    </div>
+                    <div class="col-sm-4 offset-md-1 py-4">
+                        <h4 class="text-white">Contact</h4>
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="text-white">Follow on Twitter</a></li>
+                            <li><a href="#" class="text-white">Like on Facebook</a></li>
+                            <li><a href="#" class="text-white">Email me</a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <a href='#' class='py-2 d-none d-md-inline-block'>Hem</a>
-            <a href='#' class='py-2 d-none d-md-inline-block'>Om Johannes</a>
-            <a href='#' class='py-2 d-none d-md-inline-block'>Podcast</a>
-            <a href='#' class='py-2 d-none d-md-inline-block'>Föreläsningar</a>
-            <a href='#' class='py-2 d-none d-md-inline-block'>Nyhetsbrev</a>
         </div>
-    </nav>
-
-    <section>
-        <h1>Jag Är Paradiset</h1>
-        <p>Här får du träffa de ledande forskarna, entreprenörerna, atleterna och influencers inom hälsa och
-            hållbarhet som ger dig verktyg, tips och inspiration att utveckla din egen hälsa på ett hållbart
-            sätt. Oavsett om det handlar om att prestera bättre, bli frisk eller att undvika sjukdom</p>
-        <div class="video-container">
-            <video autoplay loop muted plays-inline>
-                <source src='media/JC hemsida3.mp4' type='video/mp4'>
-            </video>
+        <div class="navbar navbar-dark bg-dark shadow-sm">
+            <div class="container d-flex justify-content-between">
+                <a href="#" class="navbar-brand d-flex align-items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2"
+                        focusable="false" aria-hidden="true">
+                        <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path>
+                        <circle cx="12" cy="13" r="4"></circle>
+                    </svg>
+                    <strong>Paradiset</strong>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader"
+                    aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
         </div>
-    </section>
+    </header>
 
-    <main role='main'>
-        <div class='album py-5'>
-            <div class="main-container">
-                <div class="row justify-content-md-center">
-                    <div class="col col-md-2 top-item">
-                        <!-- <img class='card-image-top' src="images/JC oktober.jpg" alt=""> -->
-                        <div class="card-body">
-                            <h3>Om Johannes</h3>
-                            <p>Johannes historia</p>
-                            <i class="fas fa-minus"></i>
-                        </div>
-                    </div>
+    <main role="main">
 
-                    <div class="col col-md-2 top-item">
-                        <!-- <img class='card-image-top' src="images/JC oktober.jpg" alt=""> -->
-                        <div class="card-body">
-                            <h3>Föreläsningar</h3>
-                            <p>Ett urval av föreläsningar</p>
-                            <i class="fas fa-minus"></i>
-                        </div>
-                    </div>
-
-                    <div class="col col-md-2 top-item">
-                        <!-- <img class='card-image-top' src="images/JC oktober.jpg" alt=""> -->
-                        <div class="card-body">
-                            <h3>Podcast</h3>
-                            <p>Lyssna på Johannes Podcast</p>
-                            <i class="fas fa-minus"></i>
-                        </div>
-                    </div>
-                    </div> <!-- end of .row -->
-
-                <div id="upcoming">
-                    <h2>Kommande Föreläsningar</h2>
+        <section class="vidsec">
+            <div class="jumbotron bg-color">
+                <video id="video-background" autoplay loop muted plays-inline>
+                    <source src='media/JC hemsida3_crop.mp4' type='video/mp4'>
+                </video>
+                <div class="container">
+                    <h1 class="jumbotron-heading">Jag Är Paradiset</h1>
+                    <p class="lead text-muted">Här får du träffa de ledande forskarna, entreprenörerna, atleterna och
+                        influencers inom hälsa och
+                        hållbarhet som ger dig verktyg, tips och inspiration att utveckla din egen hälsa på ett
+                        hållbart
+                        sätt. Oavsett om det handlar om att prestera bättre, bli frisk eller att undvika sjukdom</p>
+                    <!--p>
+                    <a href="#" class="btn btn-primary my-2">Main call to action</a>
+                    <a href="#" class="btn btn-secondary my-2">Secondary action</a>
+                </p-->
+                </div>
+                <div class="container-fluid">
                     <div class="row">
                         <div class="col-md-4">
-                            <img class='card-image-top' src="images/JC_Press_högupplöst.jpeg" alt="">
-                            <div class="card-body">
-                                <p>Lorem Ipsem</p>
-                                <a href="#" class="btn">Info</a>
+                            <div class="card-outer">
+                                <img class="pcard" src="../images/top1.webp">
+                                <div class="card-inner">
+                                    <div>
+                                        <h6>
+                                            <span>
+                                                <a href="#">Om Johannes</a>
+                                            </span>
+                                        </h6>
+                                    </div>
+                                    <div>
+                                        <p>
+                                            <a href="#">
+                                                <span>
+                                                    asdasdas
+                                                </span>
+                                            </a>
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-
                         <div class="col-md-4">
-                            <img class='card-image-top' src="images/JC_Press_högupplöst.jpeg" alt="">
-                            <div class="card-body">
-                                <p>Lorem Ipsem</p>
-                                <a href="#" class="btn">Info</a>
+
+                            <div class="card-outer">
+                                <img class="pcard" src="../images/top2.webp">
+
                             </div>
+                            <div class="card-inner">asd</div>
                         </div>
-
                         <div class="col-md-4">
-                            <img class='card-image-top' src="images/JC_Press_högupplöst.jpeg" alt="">
-                            <div class="card-body">
-                                <p>Lorem Ipsem</p>
-                                <a href="#" class="btn">Info</a>
+
+                            <div>
+                                <img class="pcard" src="../images/top3.webp">
+                                <div class="card-inner">asd</div>
                             </div>
                         </div>
                     </div>
-                </div> <!-- end of #upcoming -->
+                </div>
+        </section>
+        <section id="promo-sec">
+            <div class="container">
+                <div class="row">
 
-                <div id="blog-posts">
-                    <h2>Blog Posts</h2>
-                    <div>
-                        <div class='card-image-top' class="col-md-3">
-                            <img src="images/IMG_2652.jpeg" alt="">
-                            <div class="card-body">
-                                <p>Lorem Ipsem</p>
-                                <a href="#">Läs Mer</a>
-                            </div>
-                        </div>
+                </div>
+            </div>
+        </section>
+        <section id="upcoming-sec">
+            <div class="container">
+                <div class="row">
 
-                        <div class='card-image-top' class="col-md-3">
-                            <img src="images/IMG_2652.jpeg" alt="">
-                            <div class="card-body">
-                                <p>Lorem Ipsem</p>
-                                <a href="#">Läs Mer</a>
-                            </div>
-                        </div>
+                </div>
+            </div>
+        </section>
+        <section id="blog-post">
 
-                        <div class="col-md-3">
-                            <img class='card-image-top' src="images/IMG_2652.jpeg" alt="">
-                            <div class="card-body">
-                                <p>Lorem Ipsem</p>
-                                <a href="#">Läs Mer</a>
-                            </div>
-                        </div>
+        </section>
+        <div class="bg-light">
+            <div class="container">
+                <div class="row">
 
-                        <div class="col-md-3">
-                            <img class='card-image-top' src="images/IMG_2652.jpeg" alt="">
-                            <div class="card-body">
-                                <p>Lorem Ipsem</p>
-                                <a href="#">Läs Mer</a>
-                            </div>
-                        </div>
-                    </div>
-                </div> <!-- end of #blog-posts -->
+                </div>
             </div>
         </div>
+
     </main>
 
+    <div class="scroll-up">
+        <a class='up' href='#container'><i class="fas fa-chevron-up"></i></a>
+    </div>
     <footer>
-        <div class="subscribe">
-            <h3>Nyhetsbrev</h3>
-            <form action="">
-                <label for="email-addr"></label>
-                <input type="email" name='email' class='validation[requested, custom[onlyLetter], length[0,100]] feedback-input'
-                    placeholder='Email address' id='email-addr'>
-                <input type="submit" value='Subscribe' id='subscribeBtn'>
-            </form>
-        </div>
-
-        <div class="copy">
-            <p>&copy; 2018 by Anonymous</p>
-            <ul class="icons">
-                <i class="fab fa-instagram"></i>
-                <i class="fab fa-youtube"></i>
-                <i class="fab fa-facebook-f"></i>
-                <i class="fab fa-pinterest-p"></i>
-            </ul>
-        </div>
-
-        <div class="scroll-up">
-            <a class='up' href='#container'><i class="fas fa-chevron-up"></i></a>
+        <div class="contianer">
+            <div class="row">
+                <div class="col mx-auto text-center">
+                    <h3>Nyhetsbrev</h3>
+                    <form action="">
+                        <label for="email-addr"></label>
+                        <input type="email" name='email' class='validation[requested, custom[onlyLetter], length[0,100]] feedback-input'
+                            placeholder='Email address' id='email-addr'>
+                        <input type="submit" value='Subscribe' id='subscribeBtn'>
+                    </form>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col text-center">
+                    <p>&copy; 2018 by Anonymous</p>
+                </div>
+                <div class="col text-center">
+                    <ul class="icons">
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-youtube"></i>
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-pinterest-p"></i>
+                    </ul>
+                </div>
+            </div>
         </div>
     </footer>
-
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
     <script src='js/main.js'></script>
 </body>
 
