@@ -1,5 +1,6 @@
 body {
     font-family: 'Roboto', sans-serif;
+    background: #3a3a3a;
 }
 
 .logo {
@@ -65,6 +66,7 @@ main .container {
 main .container {
     padding: 0;
     margin-top: 2rem;
+    margin-bottom: 35%;
     background: initial;
 }
 
@@ -74,13 +76,23 @@ main .container {
 
 .card-body {
     width: 75%;
-    margin: -5rem auto;
+    margin: -7rem auto;
     padding: 2rem;
     background: #e1e1e1;
     position: relative;
     text-align: center;
 }
 
+@media (min-width: 768px) {
+    main .container {
+        margin-bottom: 20%;
+    }
+}
+@media (min-width: 1200px) {
+    main .container {
+        margin-bottom: 15%;
+    }
+}
 
 
   /*

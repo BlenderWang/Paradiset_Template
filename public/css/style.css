@@ -304,8 +304,9 @@ nav a:hover {
   /*
   * footer
   */
-  footer p {
+footer p {
     margin-bottom: .25rem;
+    color: #1f1f1f;
   }
 
   footer {
