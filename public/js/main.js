@@ -14,8 +14,14 @@ $(document).ready(function() {
         return false;
     });
 
-    $('.showDetails').click(function() {
+    $('.showDetails').hover(function() {
         $('.hidden').toggle('hidden');
+        return false;
+    });
+
+    $('.showDetails').mouseleave(function() {
+        $('.hidden').addClass('hidden');
+        return false;
     });
 
 });
