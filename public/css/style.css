@@ -121,10 +121,56 @@ nav a:hover {
   padding-bottom: 3em;
 }
 
-.pcard {
+/* .pcard {
     width: 310px;
     height: 280px;
     object-fit: cover;
+} */
+
+.top-images {
+  max-width: 90% !important;
+}
+
+.promo {
+  margin-top: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.desc {
+  background: #fff;
+  width: 60%;
+  position: absolute;
+  top: 80%;
+  border-radius: 2px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.desc:hover {
+  background: #a1a1a1;
+  width: 70%;
+  color: #eee;
+}
+
+.desc:hover h6 {
+  color: purple;
+}
+
+.profile-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 2px;
+}
+
+.btn:hover {
+  color: #eee;
+  background: #27ae60;
 }
 
 #card1 {
