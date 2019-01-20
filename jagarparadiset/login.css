@@ -1,0 +1,5 @@
+body.login div#login h1 a {
+  background-image: url("images/Paradiset Logo Transparent SMALL.png");
+	background-position: center;
+	background-size: contain;
+}
