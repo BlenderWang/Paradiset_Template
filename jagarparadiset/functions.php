@@ -48,4 +48,18 @@ register_post_type('podcast-post',
     'supports' => array('title', 'editor', 'thumbnail', 'revisions'),
   )
 );
+register_post_type('event-post',
+  array(
+    'labels' => array(
+      'name' => __('Event'),
+      'singular_name' => __('Event post'),
+      'add_new_item' => __('Add new Event'),
+    ),
+    'menu_icon' => 'dashicons-media-interactive',
+    'public' => true,
+    'has_archive' => true,
+    'rewrite' => array('slug' => 'podcastpost'),
+    'supports' => array('title', 'editor', 'thumbnail', 'revisions'),
+  )
+);
 ?>
