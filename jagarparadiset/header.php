@@ -19,8 +19,9 @@
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
     <div class="navbar-nav">
       <a class="nav-item nav-link active" href="<?=esc_url(home_url('/'));?>">Hem <span class="sr-only">(current)</span></a>
-      <a class="nav-item nav-link" href="#">Om Johannes</a>
+      <a class="nav-item nav-link" href="<?php home_url('/om') ?>">Om Johannes</a>
       <a class="nav-item nav-link" href="#">Föreläsningar</a>
+      <a class="nav-item nav-link" href="<?php home_url('/blogg') ?>">Blogg</a>
       <a class="nav-item nav-link" href="#">Nyhetsbrev</a>
     </div>
   </div>

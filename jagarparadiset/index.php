@@ -2,24 +2,8 @@
 /**
  * The main template file
  */
-
 get_header();
 ?>
-<?php if ( is_home() && ! is_front_page() ) : ?>
-		    <section>
-        <h1>Jag Är Paradiset</h1>
-        <p>Här får du träffa de ledande forskarna, entreprenörerna, atleterna och influencers inom hälsa och
-            hållbarhet som ger dig verktyg, tips och inspiration att utveckla din egen hälsa på ett hållbart
-            sätt. Oavsett om det handlar om att prestera bättre, bli frisk eller att undvika sjukdom</p>
-        <div class="video-container">
-            <video autoplay loop muted plays-inline>
-                <source src='<?php echo get_template_directory_uri(); ?>/media/JC_hemsida3_crop.mp4' type='video/mp4'>
-            </video>
-        </div>
-    </section>
-<?php else : ?>
-
-<?php endif; ?>
 <main role="main">
         <section class="vidsec">
             <div class="jumbotron bg-color">
@@ -27,7 +11,7 @@ get_header();
                     <source src='<?php echo get_template_directory_uri(); ?>/media/JC_hemsida3_crop.mp4' type='video/mp4'>
                 </video>
                 <div class="container">
-                    <h1 class="jumbotron-heading">Jag Är Paradiset</h1>
+                    <h1 class="jumbotron-heading">Jag Är Paradiset!</h1>
                     <p class="lead">Här får du träffa de ledande forskarna, entreprenörerna, atleterna och
                         influencers inom hälsa och
                         hållbarhet som ger dig verktyg, tips och inspiration att utveckla din egen hälsa på ett

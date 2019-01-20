@@ -7,17 +7,20 @@ get_header();
     <main role="main">
         <div class="container">
             <h1 class='text-center text-light'>Om Johannes</h1>
-            <img src="./images/JC oktober.jpg" alt="" class="om-img">
-
-            <!-- <div class="card card-om"> -->
-                <div class="card-body bg-light">
+            <?php
+              $image = get_field('about-image');
+              if( !empty($image) ): ?>
+              	<img class="om-img" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>"/>
+            <?php endif; ?>
+            <div class="card card-om">
+                <div class="card-body bg-light card-om-inner">
                     <h5 class="card-title display-6">Om Johannes</h5>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, odit incidunt? Iusto odit tempore aut illo ex praesentium esse eligendi! Quisquam, minima. Deserunt dolores animi sequi qui rem dolore iusto?
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, odit incidunt? Iusto odit tempore aut illo ex praesentium esse eligendi! Quisquam, minima. Deserunt dolores animi sequi qui rem dolore iusto?
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, odit incidunt? Iusto odit tempore aut illo ex praesentium esse eligendi! Quisquam, minima. Deserunt dolores animi sequi qui rem dolore iusto?
-                    </p>
-                </div>
-            <!-- </div> -->
+                    <div class="card-text">
+                      <?php the_field('about-text'); ?>
+                    </div>
+                  </div>
+          </div>
         </div>
     </main>
-<?php get_footer();  ?>
+    <?php
+    get_footer();
